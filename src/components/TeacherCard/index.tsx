@@ -29,7 +29,7 @@ const TeacherCard: React.FC<TeacherCardProps> = ({
         <p className={styles.title}>{title}</p>
         <p className={styles.contact}>
           <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
-          <a href={`mailto:${email}`}>{email}</a>
+          <span>{email}</span>
         </p>
         {phone && (
           <p className={styles.contact}>
